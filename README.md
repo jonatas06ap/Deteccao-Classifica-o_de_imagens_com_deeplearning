@@ -20,7 +20,7 @@ O dataset foi construído a partir de **89 imagens originais**, processadas e di
   - **Localização:** `yolov3/dataset/valid`
 
 - **Teste:**  
-  - 25 imagens  
+  - 14 imagens  
   - **Localização:** `yolov3/dataset/test`
 
 ---
