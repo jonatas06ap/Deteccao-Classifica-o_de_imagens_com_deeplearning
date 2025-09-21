@@ -1,4 +1,5 @@
-Detecção e Classificação de Imagens com Deep Learning
+# Detecção e Classificação de Imagens com Deep Learning
+
 Este projeto utiliza uma rede neural de Deep Learning para detectar e classificar duas classes de objetos: um patinho de pelúcia e uma preguiça de pelúcia ("Lilica").
 
 Dataset
@@ -41,6 +42,6 @@ As imagens de resultado da fase de teste estão em: yolov3/runs/detect/exp4/
 Exemplos de Detecção
 A seguir, alguns exemplos de inferência do modelo em imagens do conjunto de teste.
 
-Detecção do Patinho
-Detecção da Lilica
-Detecção de Ambos
+![Detecção do Patinho](WhatsApp-Image-2025-08-30-at-14_28_27_jpeg.rf.472dcde4d99dc185c461aa370b1c2591.jpg)
+![Detecção da Lilica](WhatsApp-Image-2025-08-30-at-14_27_42_jpeg.rf.3c7b8acda854e02c1a21844aef9d6d76.jpg)
+![Detecção de Ambos](WhatsApp-Image-2025-08-30-at-14_26_51_jpeg.rf.c55cfb062b30781d19d9016cd7e23f7a.jpg)
