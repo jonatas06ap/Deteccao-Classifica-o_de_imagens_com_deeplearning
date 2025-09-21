@@ -1,25 +1,46 @@
-# Deteccao-Classifica-o_de_imagens_com_deeplearning
-Foi feito uma rede de Deep Learning para detectar duas classes de objetos, duas pelúcias. 
+Detecção e Classificação de Imagens com Deep Learning
+Este projeto utiliza uma rede neural de Deep Learning para detectar e classificar duas classes de objetos: um patinho de pelúcia e uma preguiça de pelúcia ("Lilica").
 
+Dataset
+O dataset foi construído a partir de 89 imagens originais, que foram processadas e divididas em três conjuntos:
 
-O dataset foi criado aplicando a partir de 89 imagens, as quais foram dividas em:  
-1. Treino: 50 imagens originais + 100 criadas com Data Augmentation (Shear, Flip e Rotation) (yolo3/dataset/train)
-2. Validação: 25 imagens (yolo3/dataset/valid)
-3. Teste: 25 imagens (yolo3/dataset/test)
+Treino: 50 imagens originais, com um acréscimo de 100 imagens criadas via Data Augmentation (Cisalhamento, Rotação e Inversão).
 
-A rede usada como base foi a YOLOv3, usada a partir do Framework PyTorch e placa de vídeo
-Nvidia RTX 3050 4GB, com Python 3.10 e com versões contidas em: yolov3/requirements.txt
+Localização: yolov3/dataset/train
 
-Após treinamento com 50 épocas a rede atingiu um bom resultado na classificação das duas classes, patinho e lilica:
-Class	 P (Precision)	R (Recall)	mAP50	   mAP50-95
-all	      0.965	         1	      0.995	     0.81
-lilica	  0.934	         1	      0.995	     0.842
-patinho	  0.996	         1	      0.995	     0.777
+Validação: 25 imagens.
 
-Os pesos gerados pelo treinamento estão em: yolo3/runs/train/PatinhoLilica_YOLOv37
-Já os resultados do teste estão em: yolo/runs/detect/exp4
+Localização: yolov3/dataset/valid
 
-A seguir estão algumas imagens do teste:
-![Detecção Patinho](https://drive.google.com/file/d/1OicYQpvxOat-STTeB1ay9ZLI28ySAVWA/view)
-![Detecção Lilica](https://drive.google.com/file/d/1QaBrRsGtWT5QzzMLip_-Q9_s5PJdy6KP/view)
-![Detecção Ambos](https://drive.google.com/file/d/1_D6mH1IiaokXx4BdiQqpx_1urIFG2KKr/view)
+Teste: 25 imagens.
+
+Localização: yolov3/dataset/test
+
+Arquitetura e Ambiente
+A rede neural utilizada foi a YOLOv3, implementada com o framework PyTorch.
+
+Hardware: GPU NVIDIA GeForce RTX 3050 4GB
+
+Linguagem: Python 3.10
+
+Dependências: As versões das bibliotecas estão detalhadas no arquivo yolov3/requirements.txt.
+
+Resultados
+Após um treinamento de 50 épocas, a rede alcançou excelentes resultados na validação, demonstrando alta precisão e recall para ambas as classes.
+
+Classe	Precision (P)	Recall (R)	mAP@.50	mAP@.50-.95
+all	0.965	1.000	0.995	0.810
+lilica	0.934	1.000	0.995	0.842
+patinho	0.996	1.000	0.995	0.777
+
+Exportar para as Planilhas
+Os pesos gerados pelo treinamento estão em: yolov3/runs/train/PatinhoLilica_YOLOv37/
+
+As imagens de resultado da fase de teste estão em: yolov3/runs/detect/exp4/
+
+Exemplos de Detecção
+A seguir, alguns exemplos de inferência do modelo em imagens do conjunto de teste.
+
+Detecção do Patinho
+Detecção da Lilica
+Detecção de Ambos
