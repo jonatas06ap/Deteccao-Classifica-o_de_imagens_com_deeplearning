@@ -255,3 +255,15 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Ignorar a pasta com todos os resultados de treinamento e detecção
+runs/
+
+# Ignorar especificamente os arquivos de pesos do PyTorch, caso estejam em outro lugar
+*.pt
+
+# Ignorar caches e arquivos de ambiente do Python
+__pycache__/
+*.pyc
+venv/
+(deep_env)/

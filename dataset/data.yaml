@@ -1,0 +1,13 @@
+names:
+- lilica
+- patinho
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: detection-and-classification-itseo
+  url: https://universe.roboflow.com/patinholilica/detection-and-classification-itseo/dataset/3
+  version: 3
+  workspace: patinholilica
+test: ../test/images
+train: dataset/train/images
+val: dataset/valid/images
